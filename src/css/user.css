@@ -38,7 +38,9 @@ body {
     color: #000;
     position: absolute;
     margin-top: -240px;
-    margin-left: 10px;
+    margin-left: -140px;
+    background: none;
+    border: none;
     font-size: 30px;
 }
 .image{
