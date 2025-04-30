@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "F1-bold";
+    src: url(../stora/fonts/Formula1-Bold.otf)
+}
+
+@font-face {
+    font-family: "F1-wide";
+    src: url(../stora/fonts/Formula1-Wide.otf)
+}
+
+@font-face {
+    font-family: "F1-regular";
+    src: url(../stora/fonts/Formula1-Regular.otf)
+}
