@@ -16,7 +16,7 @@ body {
     height: 450px;
     width: 300px;
     box-shadow: 0 10px 20px #000;
-    background-color: #000;
+    background: linear-gradient(to bottom, #000 90%, #bd162c );
     background-size: cover;
     justify-content: center;
     align-items: center;
@@ -26,17 +26,16 @@ body {
 }
 
 .shape {
-    background-color: #a6051a;
+    background-color: #bd162c;
     height: 250px;
     width: 400px;
     margin-left: -20px;
     position: relative;
     top: -80px;
-    box-shadow: 0 2px 15px #fff;
     transform: rotate(20deg);
 }
 .up{
-    color: #fff;
+    color: #000;
     position: absolute;
     margin-top: -240px;
     margin-left: 10px;
@@ -52,7 +51,7 @@ body {
     background-size: cover;
     border: none;
     border-radius: 50%;
-    box-shadow: 0 2px 15px rgb(255, 255, 255);
+    box-shadow: 0 2px 15px rgb(255, 0, 0);
     transform: rotate(-20deg);
 } 
 
