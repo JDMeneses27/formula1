@@ -1,18 +1,13 @@
-function loguear()
-{
-    let user = document.getElementById("user").value;
-    let password = document.getElementById("password").value;
-
-    if(user == "Peneses" && password == "1234" || user == "Admin" && password == "12345")
-    {
-        window.location="src/html/index.html"
-    } else{
-        alert("Usuario y/o contraseña incorrecta");
-    }
-}
-
-let login = document.getElementById("button")
-login.addEventListener("click", (e) => {
+const loginForm = document.querySelector('#loginForm')
+loginForm.addEventListener('submit', (e) =>{
     e.preventDefault()
-    loguear()
+    const email = document.querySelector('#email').value
+    const password = document.querySelector('#password').value
+    const Users = JSON.parse(localStorage.getItem('users')) || []
+    const validUser = Users.find(user => user.email === email && user.password === password)
+    if(!validUser){
+        return alert('Usuario y/o contraseña incorrectos')
+    }
+    alert(`Bienvenido ${validUser.user}`)
+    window.location.href = "../js/index.html"
 })

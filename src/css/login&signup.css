@@ -78,7 +78,7 @@ form label input{
     background-color: transparent;
     outline: none;
     border: none;
-    color: #252525;
+    color: #fff;
     border-bottom: solid 1px white;
     padding: 0 5px;
     font-size: 18px;
@@ -94,10 +94,11 @@ form .link{
     background-color: transparent;
     color: white;
     margin-bottom: 15px;
+    text-decoration: none;
 }
 form button {
     color: white;
-    border: none;
-    padding: 10px 15px;
+    border-color: #fff;
+    padding: 12px 30px;
     background: linear-gradient(135deg, #0a0a0a, #0f0f0f, #121212);
 }
