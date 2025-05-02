@@ -192,7 +192,7 @@ header {
 
 .estadistica {
   display: none; /* Al principio todas las estadísticas están ocultas */
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -221,8 +221,8 @@ header {
   position: relative;
   top: 50px;
   font-family: "F1";
-  background-color: #006F62;
-  font-size: 70px;
+  /* background-color: #006F62; */
+  font-size: 50px;
 }
 
 .stadistics h3 {
@@ -232,19 +232,176 @@ header {
   align-items: center;
   text-align: center;
   justify-content: center;
+  margin-left: 60px;
   top: 90px;
   height: 40px;
-  margin-top: -23px;
+  margin-top: -20px;
   font-size: 17px;
-  background-color: #006F62;
+  /* background-color: #006F62; */
+  color: #2e2e2e;
   width: 300px;
 }
 .stadistics p {
+  font-family: "impact";
+  color: #575757;
   position: relative;
-  background-color: #00D2BE;
-  width: 150px;
-  top: 54px;
+  margin-left: 80px;
+  /* background-color: #00D2BE; */
+  width: 180px;
+  top: 55px;
   margin-top: 5px;
   left: 260px;
-  font-size: 20px;
+  font-size: 17px;
+}
+.piastri {
+  box-shadow: 0 0 10px #FF8000, 0 0 20px #FF8000, 0 0 30px #FF8000, 0 0 40px #FF8000;
+}
+.piastri img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #FF8000);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+  
+}
+.norris {
+  box-shadow: 0 0 10px #FF8000, 0 0 20px #FF8000, 0 0 30px #FF8000, 0 0 40px #FF8000;
+}
+.norris img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #FF8000);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.max {
+  box-shadow: 0 0 10px #1E1E7A, 0 0 20px #1E1E7A, 0 0 30px #1E1E7A, 0 0 40px #1E1E7A;
+}
+
+.max img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #1E1E7A);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+.russell {
+  box-shadow: 0 0 10px #00D2BE, 0 0 20px #00D2BE, 0 0 30px #00D2BE, 0 0 40px #00D2BE;
+}
+
+.russell img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #00D2BE);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.leclerc {
+  box-shadow: 0 0 10px #DC0000, 0 0 20px #DC0000, 0 0 30px #DC0000, 0 0 40px #DC0000;
+}
+
+.leclerc img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #DC0000);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.antonelli {
+  box-shadow: 0 0 10px #00D2BE, 0 0 20px #00D2BE, 0 0 30px #00D2BE, 0 0 40px #00D2BE;
+}
+
+.antonelli img {
+  width: 710px;
+  right: 600px;
+  top: -2px;
+  filter: drop-shadow(5px 5px 10px  #00D2BE);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.hamilton {
+  box-shadow: 0 0 10px #DC0000, 0 0 20px #DC0000, 0 0 30px #DC0000, 0 0 40px #DC0000;
+}
+
+.hamilton img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #DC0000);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.albon {
+  box-shadow: 0 0 10px #005AFF, 0 0 20px #005AFF, 0 0 30px #005AFF, 0 0 40px #005AFF;
+}
+
+.albon img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #005AFF);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.ocon {
+  box-shadow: 0 0 10px #B6BABD, 0 0 20px #B6BABD, 0 0 30px #B6BABD, 0 0 40px #B6BABD;
+}
+
+.ocon img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #B6BABD);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.stroll {
+  box-shadow: 0 0 10px #006F62, 0 0 20px #006F62, 0 0 30px #006F62, 0 0 40px #006F62;
+}
+
+.stroll img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #006F62);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.gasly {
+  box-shadow: 0 0 10px #005ba9, 0 0 20px #005ba9, 0 0 30px #005ba9, 0 0 40px #005ba9;
+}
+
+.gasly img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #005ba9);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.hulkenberg {
+  box-shadow: 0 0 10px #00e701, 0 0 20px #00e701, 0 0 30px #00e701, 0 0 40px #00e701;
+}
+
+.hulkenberg img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #00e701);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
 }
