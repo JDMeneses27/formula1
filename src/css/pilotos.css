@@ -45,7 +45,7 @@ header {
     background-color: brown;
     width: 100%;
     height: 650px;
-    margin-top: 400px;
+    margin-top: 600px;
     display: grid;
     grid-template-columns: repeat(6, 1fr); 
     grid-template-rows: repeat(6, 1fr); 
@@ -154,4 +154,97 @@ header {
 .racing:hover {
   border-color: #7366FF;
   box-shadow: 0 0 10px #7366FF, 0 0 20px #7366FF, 0 0 30px #7366FF, 0 0 40px #7366FF;
+}
+
+.marca {
+  font-family: "F1";
+  z-index: 1;
+  font-size: 20px;
+  margin-top: 150px;
+}
+
+.puestos {
+  position: absolute;
+  z-index: 1;
+  font-family: "F1";
+  font-size: 50PX;
+  margin-bottom: 120px;
+  margin-right: 120px;
+}
+.drivers img{
+  width: 196px;
+  height: 196px;
+  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.drivers button {
+  background-color: transparent;
+  width: 196px;
+  height: 196px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: transparent;
+}
+
+.estadistica {
+  display: none; /* Al principio todas las estadísticas están ocultas */
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  margin-top: -1250px;
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+/* Estilo de visibilidad activa */
+.estadistica.active {
+  display: block;
+  opacity: 1;
+}
+
+.stadistics {
+  margin-left: 50%;
+  border-radius: 30px;
+  background-color: rgba(202, 201, 201, 0.849);
+  width: 50%;
+  height: 100%;
+}
+
+.stadistics h2 {
+  position: relative;
+  top: 50px;
+  font-family: "F1";
+  background-color: #006F62;
+  font-size: 70px;
+}
+
+.stadistics h3 {
+  position: relative;
+  font-family: "F1";
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  top: 90px;
+  height: 40px;
+  margin-top: -23px;
+  font-size: 17px;
+  background-color: #006F62;
+  width: 300px;
+}
+.stadistics p {
+  position: relative;
+  background-color: #00D2BE;
+  width: 150px;
+  top: 54px;
+  margin-top: 5px;
+  left: 260px;
+  font-size: 20px;
 }
