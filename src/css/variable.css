@@ -1,4 +1,8 @@
 @font-face {
+    font-family: "Formula1-bold";
+    src: url(../fonts/Formula1-Bold_web.ttf);
+}
+@font-face {
     font-family: "F1";
     src: url(../fonts/RussoOne-Regular.ttf);
 }
