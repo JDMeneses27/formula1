@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: aqua;
+    /* background-color: aqua; */
     align-items: center;
     text-align: center;
     margin-top: 20%;
@@ -18,14 +18,14 @@ header {
 
 .title{
     font-family: "F1";
-    color: black;
+    color: white;
     font-size: 60px;
     margin-left: 50px;
     text-align: left;
 }
 
 .subtitle{
-    color: black;
+    color: white;
     margin-left: 50px;
     background-color: rgba(202, 201, 201, 0.849);
     margin-top: 20px;
@@ -42,7 +42,7 @@ header {
 }
 
 .container {
-    background-color: brown;
+    /* background-color: brown; */
     width: 100%;
     height: 650px;
     margin-top: 600px;
@@ -66,7 +66,7 @@ header {
 
 .mclaren {
     /* background-color: #FF8000; */
-    border: 2px solid black; 
+    border: 2px solid white; 
     transition: transform 0.3s;
   }
 .mclaren:hover {
@@ -76,7 +76,7 @@ header {
 
 .redbull {
   /* background-color: #1E1E7A; */
-  border: 2px solid black; 
+  border: 2px solid white; 
   transition: transform 0.3s;
 }
 .redbull:hover {
@@ -85,7 +85,7 @@ header {
 }
 .ferrari {
   /* background-color: #DC0000; */
-  border: 2px solid black; 
+  border: 2px solid white; 
   transition: transform 0.3s;
 }
 .ferrari:hover {
@@ -94,7 +94,7 @@ header {
 }
 .mercedes {
   /* background-color: #00D2BE; */
-  border: 2px solid black; 
+  border: 2px solid white; 
   transition: transform 0.3s;
 }
 .mercedes:hover {
@@ -103,7 +103,7 @@ header {
 }
 .astonmartin {
   /* background-color: #006F62; */
-  border: 2px solid black; 
+  border: 2px solid white; 
   transition: transform 0.3s;
 }
 .astonmartin:hover {
@@ -112,7 +112,7 @@ header {
 }
 .williams {
   /* background-color: #005AFF; */
-  border: 2px solid black; 
+  border: 2px solid white; 
   transition: transform 0.3s;
 }
 .williams:hover {
@@ -121,7 +121,7 @@ header {
 }
 .haas {
   /* background-color: #B6BABD; */
-  border: 2px solid black; 
+  border: 2px solid white; 
   transition: transform 0.3s;
 }
 .haas:hover {
@@ -130,7 +130,7 @@ header {
 }
 .alpine {
   /* background-color: #005ba9; */
-  border: 2px solid black; 
+  border: 2px solid white; 
   transition: transform 0.3s;
 }
 .alpine:hover {
@@ -139,7 +139,7 @@ header {
 }
 .kick {
   /* background-color:	#00e701; */
-  border: 2px solid black; 
+  border: 2px solid white; 
   transition: transform 0.3s;
 }
 .kick:hover {
@@ -148,7 +148,7 @@ header {
 }
 .racing {
   /* background-color: #7366FF; */
-  border: 2px solid black; 
+  border: 2px solid white; 
   transition: transform 0.3s;
 }
 .racing:hover {
@@ -158,6 +158,11 @@ header {
 
 .marca {
   font-family: "F1";
+  text-shadow:
+    -1px -1px 0 black,
+     3px -1px 0 black,
+    -1px  1px 0 black,
+     3px  1px 0 black;
   z-index: 1;
   font-size: 20px;
   margin-top: 150px;
@@ -218,6 +223,12 @@ header {
 }
 
 .stadistics h2 {
+  color: white;
+  text-shadow:
+  -1px -1px 0 black,
+   3px -1px 0 black,
+  -1px  1px 0 black,
+   3px  1px 0 black;
   position: relative;
   top: 50px;
   font-family: "F1";
@@ -398,6 +409,111 @@ header {
 }
 
 .hulkenberg img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #00e701);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.bearman {
+  box-shadow: 0 0 10px #B6BABD, 0 0 20px #B6BABD, 0 0 30px #B6BABD, 0 0 40px #B6BABD;
+}
+
+.bearman img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #B6BABD);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+
+.hadjar {
+  box-shadow: 0 0 10px #7366FF, 0 0 20px #7366FF, 0 0 30px #7366FF, 0 0 40px #7366FF;
+}
+
+.hadjar img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #7366FF);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.sainz {
+  box-shadow: 0 0 10px #005AFF, 0 0 20px #005AFF, 0 0 30px #005AFF, 0 0 40px #005AFF;
+}
+
+.sainz img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #005AFF);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.yuki {
+  box-shadow: 0 0 10px #1E1E7A, 0 0 20px #1E1E7A, 0 0 30px #1E1E7A, 0 0 40px #1E1E7A;
+}
+
+.yuki img {
+  width: 750px;
+  right: 600px;
+  top: 90px;
+  filter: drop-shadow(5px 5px 10px  #1E1E7A);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.alonso {
+  box-shadow: 0 0 10px #006F62, 0 0 20px #006F62, 0 0 30px #006F62, 0 0 40px #006F62;
+}
+
+.alonso img {
+  width: 750px;
+  right: 600px;
+  top: 90px;
+  filter: drop-shadow(5px 5px 10px  #006F62);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.lawson {
+  box-shadow: 0 0 10px #7366FF, 0 0 20px #7366FF, 0 0 30px #7366FF, 0 0 40px #7366FF;
+}
+
+.lawson img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #7366FF);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.doohan {
+  box-shadow: 0 0 10px #005ba9, 0 0 20px #005ba9, 0 0 30px #005ba9, 0 0 40px #005ba9;
+}
+
+.doohan img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #005ba9);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.bortoleto {
+  box-shadow: 0 0 10px #00e701, 0 0 20px #00e701, 0 0 30px #00e701, 0 0 40px #00e701;
+}
+
+.bortoleto img {
   width: 550px;
   right: 700px;
   top: 40px;
