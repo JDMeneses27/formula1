@@ -1,0 +1,523 @@
+@import url(../css/variable.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    /* background-color: aqua; */
+    align-items: center;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.title{
+    font-family: "F1";
+    color: white;
+    font-size: 60px;
+    margin-left: 50px;
+    text-align: left;
+}
+
+.subtitle{
+    color: white;
+    margin-left: 50px;
+    background-color: rgba(202, 201, 201, 0.849);
+    margin-top: 20px;
+    width: 90%;
+    height: 70px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.subtitle p{
+    position: relative;
+    margin: 0px 50px 0px 50px;
+}
+
+.container {
+    /* background-color: brown; */
+    width: 100%;
+    height: 650px;
+    margin-top: 600px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    grid-template-rows: repeat(6, 1fr); 
+    gap: 10px;
+}
+.drivers {
+    /* background-color: blueviolet; */
+    width: 200px;
+    height: 200px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 8px;
+    color: white;
+}
+
+.mclaren {
+    /* background-color: #FF8000; */
+    border: 2px solid white; 
+    transition: transform 0.3s;
+  }
+.mclaren:hover {
+    border-color: #FF8000;
+    box-shadow: 0 0 10px #FF8000, 0 0 20px #FF8000, 0 0 30px #FF8000, 0 0 40px #FF8000;
+}
+
+.redbull {
+  /* background-color: #1E1E7A; */
+  border: 2px solid white; 
+  transition: transform 0.3s;
+}
+.redbull:hover {
+  border-color: #1E1E7A;
+  box-shadow: 0 0 10px #1E1E7A, 0 0 20px #1E1E7A, 0 0 30px #1E1E7A, 0 0 40px #1E1E7A;
+}
+.ferrari {
+  /* background-color: #DC0000; */
+  border: 2px solid white; 
+  transition: transform 0.3s;
+}
+.ferrari:hover {
+  border-color: #DC0000;
+  box-shadow: 0 0 10px #DC0000, 0 0 20px #DC0000, 0 0 30px #DC0000, 0 0 40px #DC0000;
+}
+.mercedes {
+  /* background-color: #00D2BE; */
+  border: 2px solid white; 
+  transition: transform 0.3s;
+}
+.mercedes:hover {
+  border-color: #00D2BE;
+  box-shadow: 0 0 10px #00D2BE, 0 0 20px #00D2BE, 0 0 30px #00D2BE, 0 0 40px #00D2BE;
+}
+.astonmartin {
+  /* background-color: #006F62; */
+  border: 2px solid white; 
+  transition: transform 0.3s;
+}
+.astonmartin:hover {
+  border-color: #006F62;
+  box-shadow: 0 0 10px #006F62, 0 0 20px #006F62, 0 0 30px #006F62, 0 0 40px #006F62;
+}
+.williams {
+  /* background-color: #005AFF; */
+  border: 2px solid white; 
+  transition: transform 0.3s;
+}
+.williams:hover {
+  border-color: #005AFF;
+  box-shadow: 0 0 10px #005AFF, 0 0 20px #005AFF, 0 0 30px #005AFF, 0 0 40px #005AFF;
+}
+.haas {
+  /* background-color: #B6BABD; */
+  border: 2px solid white; 
+  transition: transform 0.3s;
+}
+.haas:hover {
+  border-color: #B6BABD;
+  box-shadow: 0 0 10px #B6BABD, 0 0 20px #B6BABD, 0 0 30px #B6BABD, 0 0 40px #B6BABD;
+}
+.alpine {
+  /* background-color: #005ba9; */
+  border: 2px solid white; 
+  transition: transform 0.3s;
+}
+.alpine:hover {
+  border-color: #005ba9;
+  box-shadow: 0 0 10px #005ba9, 0 0 20px #005ba9, 0 0 30px #005ba9, 0 0 40px #005ba9;
+}
+.kick {
+  /* background-color:	#00e701; */
+  border: 2px solid white; 
+  transition: transform 0.3s;
+}
+.kick:hover {
+  border-color: #00e701;
+  box-shadow: 0 0 10px #00e701, 0 0 20px #00e701, 0 0 30px #00e701, 0 0 40px #00e701;
+}
+.racing {
+  /* background-color: #7366FF; */
+  border: 2px solid white; 
+  transition: transform 0.3s;
+}
+.racing:hover {
+  border-color: #7366FF;
+  box-shadow: 0 0 10px #7366FF, 0 0 20px #7366FF, 0 0 30px #7366FF, 0 0 40px #7366FF;
+}
+
+.marca {
+  font-family: "F1";
+  text-shadow:
+    -1px -1px 0 black,
+     3px -1px 0 black,
+    -1px  1px 0 black,
+     3px  1px 0 black;
+  z-index: 1;
+  font-size: 20px;
+  margin-top: 150px;
+}
+
+.puestos {
+  position: absolute;
+  z-index: 1;
+  font-family: "F1";
+  font-size: 50PX;
+  margin-bottom: 120px;
+  margin-right: 120px;
+}
+.drivers img{
+  width: 196px;
+  height: 196px;
+  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.drivers button {
+  background-color: transparent;
+  width: 196px;
+  height: 196px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: transparent;
+}
+
+.estadistica {
+  display: none; /* Al principio todas las estadísticas están ocultas */
+  /* background-color: #fff; */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  margin-top: -1250px;
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+/* Estilo de visibilidad activa */
+.estadistica.active {
+  display: block;
+  opacity: 1;
+}
+
+.stadistics {
+  margin-left: 50%;
+  border-radius: 30px;
+  background-color: rgba(202, 201, 201, 0.849);
+  width: 50%;
+  height: 100%;
+}
+
+.stadistics h2 {
+  color: white;
+  text-shadow:
+  -1px -1px 0 black,
+   3px -1px 0 black,
+  -1px  1px 0 black,
+   3px  1px 0 black;
+  position: relative;
+  top: 50px;
+  font-family: "F1";
+  /* background-color: #006F62; */
+  font-size: 50px;
+}
+
+.stadistics h3 {
+  position: relative;
+  font-family: "F1";
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-left: 60px;
+  top: 90px;
+  height: 40px;
+  margin-top: -20px;
+  font-size: 17px;
+  /* background-color: #006F62; */
+  color: #2e2e2e;
+  width: 300px;
+}
+.stadistics p {
+  font-family: "impact";
+  color: #575757;
+  position: relative;
+  margin-left: 80px;
+  /* background-color: #00D2BE; */
+  width: 180px;
+  top: 55px;
+  margin-top: 5px;
+  left: 260px;
+  font-size: 17px;
+}
+.piastri {
+  box-shadow: 0 0 10px #FF8000, 0 0 20px #FF8000, 0 0 30px #FF8000, 0 0 40px #FF8000;
+}
+.piastri img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #FF8000);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+  
+}
+.norris {
+  box-shadow: 0 0 10px #FF8000, 0 0 20px #FF8000, 0 0 30px #FF8000, 0 0 40px #FF8000;
+}
+.norris img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #FF8000);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.max {
+  box-shadow: 0 0 10px #1E1E7A, 0 0 20px #1E1E7A, 0 0 30px #1E1E7A, 0 0 40px #1E1E7A;
+}
+
+.max img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #1E1E7A);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+.russell {
+  box-shadow: 0 0 10px #00D2BE, 0 0 20px #00D2BE, 0 0 30px #00D2BE, 0 0 40px #00D2BE;
+}
+
+.russell img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #00D2BE);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.leclerc {
+  box-shadow: 0 0 10px #DC0000, 0 0 20px #DC0000, 0 0 30px #DC0000, 0 0 40px #DC0000;
+}
+
+.leclerc img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #DC0000);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.antonelli {
+  box-shadow: 0 0 10px #00D2BE, 0 0 20px #00D2BE, 0 0 30px #00D2BE, 0 0 40px #00D2BE;
+}
+
+.antonelli img {
+  width: 710px;
+  right: 600px;
+  top: -2px;
+  filter: drop-shadow(5px 5px 10px  #00D2BE);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.hamilton {
+  box-shadow: 0 0 10px #DC0000, 0 0 20px #DC0000, 0 0 30px #DC0000, 0 0 40px #DC0000;
+}
+
+.hamilton img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #DC0000);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.albon {
+  box-shadow: 0 0 10px #005AFF, 0 0 20px #005AFF, 0 0 30px #005AFF, 0 0 40px #005AFF;
+}
+
+.albon img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #005AFF);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.ocon {
+  box-shadow: 0 0 10px #B6BABD, 0 0 20px #B6BABD, 0 0 30px #B6BABD, 0 0 40px #B6BABD;
+}
+
+.ocon img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #B6BABD);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.stroll {
+  box-shadow: 0 0 10px #006F62, 0 0 20px #006F62, 0 0 30px #006F62, 0 0 40px #006F62;
+}
+
+.stroll img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #006F62);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.gasly {
+  box-shadow: 0 0 10px #005ba9, 0 0 20px #005ba9, 0 0 30px #005ba9, 0 0 40px #005ba9;
+}
+
+.gasly img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #005ba9);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.hulkenberg {
+  box-shadow: 0 0 10px #00e701, 0 0 20px #00e701, 0 0 30px #00e701, 0 0 40px #00e701;
+}
+
+.hulkenberg img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #00e701);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.bearman {
+  box-shadow: 0 0 10px #B6BABD, 0 0 20px #B6BABD, 0 0 30px #B6BABD, 0 0 40px #B6BABD;
+}
+
+.bearman img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #B6BABD);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+
+.hadjar {
+  box-shadow: 0 0 10px #7366FF, 0 0 20px #7366FF, 0 0 30px #7366FF, 0 0 40px #7366FF;
+}
+
+.hadjar img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #7366FF);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.sainz {
+  box-shadow: 0 0 10px #005AFF, 0 0 20px #005AFF, 0 0 30px #005AFF, 0 0 40px #005AFF;
+}
+
+.sainz img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #005AFF);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.yuki {
+  box-shadow: 0 0 10px #1E1E7A, 0 0 20px #1E1E7A, 0 0 30px #1E1E7A, 0 0 40px #1E1E7A;
+}
+
+.yuki img {
+  width: 750px;
+  right: 600px;
+  top: 90px;
+  filter: drop-shadow(5px 5px 10px  #1E1E7A);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.alonso {
+  box-shadow: 0 0 10px #006F62, 0 0 20px #006F62, 0 0 30px #006F62, 0 0 40px #006F62;
+}
+
+.alonso img {
+  width: 750px;
+  right: 600px;
+  top: 90px;
+  filter: drop-shadow(5px 5px 10px  #006F62);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.lawson {
+  box-shadow: 0 0 10px #7366FF, 0 0 20px #7366FF, 0 0 30px #7366FF, 0 0 40px #7366FF;
+}
+
+.lawson img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #7366FF);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.doohan {
+  box-shadow: 0 0 10px #005ba9, 0 0 20px #005ba9, 0 0 30px #005ba9, 0 0 40px #005ba9;
+}
+
+.doohan img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #005ba9);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}
+
+.bortoleto {
+  box-shadow: 0 0 10px #00e701, 0 0 20px #00e701, 0 0 30px #00e701, 0 0 40px #00e701;
+}
+
+.bortoleto img {
+  width: 550px;
+  right: 700px;
+  top: 40px;
+  filter: drop-shadow(5px 5px 10px  #00e701);  object-fit: cover; /* recorta y centra la imagen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  position: absolute;
+}

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../js/drivers.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drivers</title>
+    <link rel="stylesheet" href="../css/pilotos.css">
+</head>
+<body>
+    <header>
+    <div class="title">F1 Drivers 2025</div>
+    <div class="subtitle"><p>Consulta la alineación oficial de F1 de esta temporada. Desglose completo de pilotos, puntos y posiciones actuales. Sigue a tus pilotos favoritos de F1 dentro y fuera de la pista.
+    </p></div>
+</header>
+    <div class="container">
+        <div class="drivers mclaren">
+            <p class="puestos">1</p>
+            <button onclick="selectDriver(this, 'estadistica1')"><img src="../media/oscar piastri.webp" alt="" class="piloto" ></button>
+            <p class="marca">McLaren</p>
+        </div>
+        <div class="drivers mclaren">
+            <p class="puestos">2</p>
+            <button onclick="selectDriver(this, 'estadistica2')"><img src="../media/lannor01.avif" alt="" class="piloto"></button>
+            <p class="marca">McLaren</p>
+        </div>
+        <div class="drivers redbull">
+            <p class="puestos">3</p>
+            <button onclick="selectDriver(this, 'estadistica3')"><img src="../media/maxvers.avif" alt="" class="piloto"></button>
+            <p class="marca">Red Bull Racing</p>
+        </div>
+        <div class="drivers mercedes">
+            <p class="puestos">4</p>
+            <button onclick="selectDriver(this, 'estadistica4')"><img src="../media/georus01.avif" alt="" class="piloto"></button>
+            <p class="marca">Mercedes</p>
+        </div>
+        <div class="drivers ferrari">
+            <p class="puestos">5</p>
+            <button onclick="selectDriver(this, 'estadistica5')"><img src="../media/chalec01.avif" alt="" class="piloto"></button>
+            <p class="marca">Ferrari</p>
+        </div>
+        <div class="drivers mercedes">
+            <p class="puestos">6</p>
+            <button onclick="selectDriver(this, 'estadistica6')"><img src="../media/andant01.avif" alt="" class="piloto"></button>
+            <p class="marca">Mercedes</p>
+        </div>
+        <div class="drivers ferrari">
+            <p class="puestos">7</p>
+            <button onclick="selectDriver(this, 'estadistica7')"><img src="../media/lewham01.avif" alt="" class="piloto"></button>
+            <p class="marca">Ferrari</p>
+        </div>
+        <div class="drivers williams">
+            <p class="puestos">8</p>
+            <button onclick="selectDriver(this, 'estadistica8')"><img src="../media/alealb01.avif" alt="" class="piloto"></button>
+            <p class="marca">Williams</p>
+        </div>
+        <div class="drivers haas">
+            <p class="puestos">9</p>
+            <button onclick="selectDriver(this, 'estadistica9')"><img src="../media/estoco01.avif" alt="" class="piloto"></button>
+            <p class="marca">Haas</p>
+        </div>
+        <div class="drivers astonmartin">
+            <p class="puestos">10</p>
+            <button onclick="selectDriver(this, 'estadistica10')"><img src="../media/lanstr01.avif" alt="" class="piloto"></button>
+            <p class="marca">Aston Martin</p>
+        </div>
+        <div class="drivers alpine">
+            <p class="puestos">11</p>
+            <button onclick="selectDriver(this, 'estadistica11')"><img src="../media/piegas01.avif" alt="" class="piloto"></button>
+            <p class="marca">Alpine</p>
+        </div>
+        <div class="drivers kick">
+            <p class="puestos">12</p>
+            <button onclick="selectDriver(this, 'estadistica12')"><img src="../media/nichul01.avif" alt="" class="piloto"></button>
+            <p class="marca">Kick Sauber</p>
+        </div>
+        <div class="drivers haas">
+            <p class="puestos">13</p>
+            <button onclick="selectDriver(this, 'estadistica13')"><img src="../media/olibea01.avif" alt="" class="piloto"></button>
+            <p class="marca">Haas</p>
+        </div>
+        <div class="drivers racing">
+            <p class="puestos">14</p>
+            <button onclick="selectDriver(this, 'estadistica14')"><img src="../media/isahad01.avif" alt="" class="piloto"></button>
+            <p class="marca">Racing Bulls</p>
+        </div>
+        <div class="drivers williams">
+            <p class="puestos">15</p>
+            <button onclick="selectDriver(this, 'estadistica15')"><img src="../media/carsai01.avif" alt="" class="piloto"></button>
+            <p class="marca">Williams</p>
+        </div>
+        <div class="drivers redbull">
+            <p class="puestos">16</p>
+            <button onclick="selectDriver(this, 'estadistica16')"><img src="../media/yuktsu01.avif" alt="" class="piloto"></button>
+            <p class="marca">Red Bull Racing</p>
+        </div>
+        <div class="drivers astonmartin">
+            <p class="puestos">17</p>
+            <button onclick="selectDriver(this, 'estadistica17')"><img src="../media/feralo01.avif" alt="" class="piloto"></button>
+            <p class="marca">Aston Martin</p>
+        </div> 
+        <div class="drivers racing">
+            <p class="puestos">18</p>
+            <button onclick="selectDriver(this, 'estadistica18')"><img src="../media/lialaw01.avif" alt="" class="piloto"></button>
+            <p class="marca">Racing Bulls</p>
+        </div>
+        <div class="drivers alpine">
+            <p class="puestos">19</p>
+            <button onclick="selectDriver(this, 'estadistica19')"><img src="../media/jacdoo01.avif" alt="" class="piloto"></button>
+            <p class="marca">Alpine</p>
+        </div>
+        <div class="drivers kick">
+            <p class="puestos">20</p>
+            <button onclick="selectDriver(this, 'estadistica20')"><img src="../media/gabbor01.avif" alt="" class="piloto"></button>
+            <p class="marca">Kick Sauber</p>
+        </div>
+    </div>
+
+    <!-- MOSTRAR LAS ESTADISTICAS  -->
+    <div class="estadistica" id="estadistica1" style="display: none;">
+        <div class="stadistics piastri">
+            <img src="../media/piastri.png" alt="">
+            <h2>Óscar Piastri</h2>
+            <h3>Equipo:</h3> <p>McLaren</p>
+            <h3>Podios:</h3> <p>14</p>
+            <h3>Agujas:</h3> <p>488</p>
+            <h3>Grandes Premios en los que participo:</h3> <p>51</p>
+            <h3>Campeonato Mundial:</h3> <p>0</p>
+            <h3>Mejor resultado en carrera:</h3> <p>1(x5)</p>
+            <h3>Posicion mas alta en la parrilla:</h3> <p>1</p>
+            <h3>Fecha de nacimiento:</h3> <p>06/04/2001</p>
+            <h3>Lugar de nacimiento:</h3> <p>Melbourne, Victoria</p>
+        </div>
+    </div>
+    <div class="estadistica" id="estadistica2" style="display: none;">
+    <div class="stadistics norris">
+    <img src="../media/norris.png" alt="">
+    <h2>Lando Norris</h2>
+    <h3>Equipo:</h3> <p>McLaren</p>
+    <h3>Podios:</h3> <p>30</p>
+    <h3>Agujas:</h3> <p>1096</p>
+    <h3>Grandes Premios en los que participo:</h3> <p>133</p>
+    <h3>Campeonato Mundial:</h3> <p>0</p>
+    <h3>Mejor resultado en carrera:</h3> <p>1(x5)</p>
+    <h3>Posicion mas alta en la parrilla:</h3> <p>1</p>
+    <h3>Fecha de nacimiento:</h3> <p>13/11/1999</p>
+    <h3>Lugar de nacimiento:</h3> <p>Bristol,Inglaterra</p>
+</div>
+</div>
+    <div class="estadistica" id="estadistica3" style="display: none;">
+        <div class="stadistics max">
+        <img src="../media/max.png" alt="">       
+        <h2>Max Verstappen</h2>
+        <h3>Equipo:</h3> <p>Red Bull Racing</p>
+        <h3>Podios:</h3> <p>115</p>
+        <h3>Agujas:</h3> <p>3110.5</p>
+        <h3>Grandes Premios en los que participo:</h3> <p>214</p>
+        <h3>Campeonato Mundial:</h3> <p>4</p>
+        <h3>Mejor resultado en carrera:</h3> <p>1(x64)</p>
+        <h3>Posicion mas alta en la parrilla:</h3> <p>1</p>
+        <h3>Fecha de nacimiento:</h3> <p>30/09/1997</p>
+        <h3>Lugar de nacimiento:</h3> <p>Hasselt, Bélgica</p>
+    </div>
+    </div>
+    <div class="estadistica" id="estadistica4" style="display: none;">
+        <div class="stadistics russell">
+            <img src="../media/russell.png" alt="">       
+            <h2>George Russell</h2>
+            <h3>Equipo:</h3> <p>Mercedes</p>
+            <h3>Podios:</h3> <p>18</p>
+            <h3>Agujas:</h3> <p>787</p>
+            <h3>Grandes Premios en los que participo:</h3> <p>133</p>
+            <h3>Campeonato Mundial:</h3> <p>0</p>
+            <h3>Mejor resultado en carrera:</h3> <p>1(x3)</p>
+            <h3>Posicion mas alta en la parrilla:</h3> <p>1</p>
+            <h3>Fecha de nacimiento:</h3> <p>15/02/1998</p>
+            <h3>Lugar de nacimiento:</h3> <p>King's Lynn, Inglaterra</p>
+        </div>
+    </div>
+    <div class="estadistica" id="estadistica5" style="display: none;">
+    <div class="stadistics leclerc">
+        <img src="../media/leclerc.png" alt="">       
+        <h2>Charles Leclerc</h2>
+        <h3>Equipo:</h3> <p>Ferrari</p>
+        <h3>Podios:</h3> <p>44</p>
+        <h3>Agujas:</h3> <p>1477</p>
+        <h3>Grandes Premios en los que participo:</h3> <p>152</p>
+        <h3>Campeonato Mundial:</h3> <p>0</p>
+        <h3>Mejor resultado en carrera:</h3> <p>1(x8)</p>
+        <h3>Posicion mas alta en la parrilla:</h3> <p>1</p>
+        <h3>Fecha de nacimiento:</h3> <p>16/10/1997</p>
+        <h3>Lugar de nacimiento:</h3> <p>Montecarlo, Mónaco</p>
+    </div>
+    </div>
+    <div class="estadistica" id="estadistica6" style="display: none;">
+        <div class="stadistics antonelli">
+            <img src="../media/antonelli.png" alt="">       
+            <h2>Kimi Antonelli</h2>
+            <h3>Equipo:</h3> <p>Mercedes</p>
+            <h3>Podios:</h3> <p>0</p>
+            <h3>Agujas:</h3> <p>38</p>
+            <h3>Grandes Premios en los que participo:</h3> <p>5</p>
+            <h3>Campeonato Mundial:</h3> <p>0</p>
+            <h3>Mejor resultado en carrera:</h3> <p>4(x1)</p>
+            <h3>Posicion mas alta en la parrilla:</h3> <p>5</p>
+            <h3>Fecha de nacimiento:</h3> <p>25/08/2006</p>
+            <h3>Lugar de nacimiento:</h3> <p>Bolonia, Italia</p>
+        </div>
+    </div>
+    <div class="estadistica" id="estadistica7" style="display: none;">
+        <div class="stadistics hamilton">
+        <img src="../media/hamilton.png" alt="">       
+        <h2>Lewis Hamilton</h2>
+        <h3>Equipo:</h3> <p>Ferrari</p>
+        <h3>Podios:</h3> <p>202</p>
+        <h3>Agujas:</h3> <p>4893.5</p>
+        <h3>Grandes Premios en los que participo:</h3> <p>361</p>
+        <h3>Campeonato Mundial:</h3> <p>7</p>
+        <h3>Mejor resultado en carrera:</h3> <p>1 (x105)</p>
+        <h3>Posicion mas alta en la parrilla:</h3> <p>1</p>
+        <h3>Fecha de nacimiento:</h3> <p>01/07/1985</p>
+        <h3>Lugar de nacimiento:</h3> <p>Stevenage, Inglaterra</p>
+        </div>
+    </div>
+    <div class="estadistica" id="estadistica8" style="display: none;">
+        <div class="stadistics albon">
+            <img src="../media/albon.png" alt="">       
+            <h2>Alexander Albon</h2>
+            <h3>Equipo:</h3> <p>Williams</p>
+            <h3>Podios:</h3> <p>2</p>
+            <h3>Agujas:</h3> <p>260</p>
+            <h3>Grandes Premios en los que participo:</h3> <p>109</p>
+            <h3>Campeonato Mundial:</h3> <p>0</p>
+            <h3>Mejor resultado en carrera:</h3> <p>3 (x2)</p>
+            <h3>Posicion mas alta en la parrilla:</h3> <p>4</p>
+            <h3>Fecha de nacimiento:</h3> <p>23/03/1996</p>
+            <h3>Lugar de nacimiento:</h3> <p>Londres, Inglaterra</p>
+            </div>
+    </div>
+    <div class="estadistica" id="estadistica9" style="display: none;">
+        <div class="stadistics ocon">
+            <img src="../media/estoco01.avif" alt="">       
+            <h2>Esteban Ocon</h2>
+            <h3>Equipo:</h3> <p>Haas</p>
+            <h3>Podios:</h3> <p>4</p>
+            <h3>Agujas:</h3> <p>459</p>
+            <h3>Grandes Premios en los que participo:</h3> <p>161</p>
+            <h3>Campeonato Mundial:</h3> <p>0</p>
+            <h3>Mejor resultado en carrera:</h3> <p>1 (x1)</p>
+            <h3>Posicion mas alta en la parrilla:</h3> <p>3</p>
+            <h3>Fecha de nacimiento:</h3> <p>17/09/1996</p>
+            <h3>Lugar de nacimiento:</h3> <p>Évreux, Normandy</p>
+            </div>
+    </div>
+    <div class="estadistica" id="estadistica10" style="display: none;">
+        <div class="stadistics stroll">
+        <img src="../media/stroll.png" alt="">       
+        <h2>Lance Stroll</h2>
+        <h3>Equipo:</h3> <p>Aston Martin</p>
+        <h3>Podios:</h3> <p>3</p>
+        <h3>Agujas:</h3> <p>302</p>
+        <h3>Grandes Premios en los que participo:</h3> <p>171</p>
+        <h3>Campeonato Mundial:</h3> <p>0</p>
+        <h3>Mejor resultado en carrera:</h3> <p>3 (x3)</p>
+        <h3>Posicion mas alta en la parrilla:</h3> <p>1</p>
+        <h3>Fecha de nacimiento:</h3> <p>29/10/1998</p>
+        <h3>Lugar de nacimiento:</h3> <p>Montreal, Canada</p>
+        </div>
+    </div>
+    <div class="estadistica" id="estadistica11" style="display: none;">
+        <div class="stadistics gasly">
+            <img src="../media/gasly.png" alt="">       
+            <h2>Pierre Gasly</h2>
+            <h3>Equipo:</h3> <p>Alpine</p>
+            <h3>Podios:</h3> <p>5</p>
+            <h3>Agujas:</h3> <p>442</p>
+            <h3>Grandes Premios en los que participo:</h3> <p>158</p>
+            <h3>Campeonato Mundial:</h3> <p>0</p>
+            <h3>Mejor resultado en carrera:</h3> <p>1 (x1)</p>
+            <h3>Posicion mas alta en la parrilla:</h3> <p>2</p>
+            <h3>Fecha de nacimiento:</h3> <p>07/02/1996</p>
+            <h3>Lugar de nacimiento:</h3> <p>Rouen, France</p>
+            </div>
+    </div>
+    <div class="estadistica" id="estadistica12" style="display: none;">
+        <div class="stadistics hulkenberg">
+            <img src="../media/nichul01.avif" alt="">       
+            <h2>Nico Hulkenberg</h2>
+            <h3>Equipo:</h3> <p>Kick Sauber</p>
+            <h3>Podios:</h3> <p>0</p>
+            <h3>Agujas:</h3> <p>577</p>
+            <h3>Grandes Premios en los que participo:</h3> <p>232</p>
+            <h3>Campeonato Mundial:</h3> <p>0</p>
+            <h3>Mejor resultado en carrera:</h3> <p>4 (x3)</p>
+            <h3>Posicion mas alta en la parrilla:</h3> <p>1</p>
+            <h3>Fecha de nacimiento:</h3> <p>19/08/1987</p>
+            <h3>Lugar de nacimiento:</h3> <p>Emmerich am Rhein, Germany</p>
+            </div>
+    </div>
+    <div class="estadistica" id="estadistica13" style="display: none;">
+        <div class="stadistics bearman">
+            <img src="../media/olibea01.avif" alt="">       
+            <h2>Oliver Bearman</h2>
+            <h3>Equipo:</h3> <p>Haas</p>
+            <h3>Podios:</h3> <p>0</p>
+            <h3>Agujas:</h3> <p>13</p>
+            <h3>Grandes Premios en los que participo:</h3> <p>8</p>
+            <h3>Campeonato Mundial:</h3> <p>0</p>
+            <h3>Mejor resultado en carrera:</h3> <p>7 (x1)</p>
+            <h3>Posicion mas alta en la parrilla:</h3> <p>10</p>
+            <h3>Fecha de nacimiento:</h3> <p>08/05/2005</p>
+            <h3>Lugar de nacimiento:</h3> <p>Chelmsford, England</p>
+            </div>
+    </div>
+    <div class="estadistica" id="estadistica14" style="display: none;">
+        <div class="stadistics hadjar">
+            <img src="../media/hadjar.png" alt="">       
+            <h2>Isack Hadjar</h2>
+            <h3>Equipo:</h3> <p>Racing Bulls</p>
+            <h3>Podios:</h3> <p>0</p>
+            <h3>Agujas:</h3> <p>5</p>
+            <h3>Grandes Premios en los que participo:</h3> <p>5</p>
+            <h3>Campeonato Mundial:</h3> <p>0</p>
+            <h3>Mejor resultado en carrera:</h3> <p>8 (x1)</p>
+            <h3>Posicion mas alta en la parrilla:</h3> <p>7</p>
+            <h3>Fecha de nacimiento:</h3> <p>28/09/2004</p>
+            <h3>Lugar de nacimiento:</h3> <p>Paris, France</p>
+            </div>
+    </div>
+    <div class="estadistica" id="estadistica15" style="display: none;">
+        <div class="stadistics sainz">
+            <img src="../media/carsai01.avif" alt="">       
+            <h2>Carlos Sainz</h2>
+            <h3>Equipo:</h3> <p>Williams</p>
+            <h3>Podios:</h3> <p>27</p>
+            <h3>Agujas:</h3> <p>1277.5</p>
+            <h3>Grandes Premios en los que participo:</h3> <p>211</p>
+            <h3>Campeonato Mundial:</h3> <p>0</p>
+            <h3>Mejor resultado en carrera:</h3> <p>1 (x4)</p>
+            <h3>Posicion mas alta en la parrilla:</h3> <p>1</p>
+            <h3>Fecha de nacimiento:</h3> <p>01/09/1994</p>
+            <h3>Lugar de nacimiento:</h3> <p>Madrid, Spain</p>
+            </div>
+    </div>
+    <div class="estadistica" id="estadistica16" style="display: none;">
+        <div class="stadistics yuki">
+            <img src="../media/yuki.png" alt="">       
+            <h2>Yuki Tsunoda</h2>
+            <h3>Equipo:</h3> <p>Red Bull Racing</p>
+            <h3>Podios:</h3> <p>0</p>
+            <h3>Agujas:</h3> <p>96</p>
+            <h3>Grandes Premios en los que participo:</h3> <p>92</p>
+            <h3>Campeonato Mundial:</h3> <p>0</p>
+            <h3>Mejor resultado en carrera:</h3> <p>4(x1)</p>
+            <h3>Posicion mas alta en la parrilla:</h3> <p>3</p>
+            <h3>Fecha de nacimiento:</h3> <p>11/05/2000</p>
+            <h3>Lugar de nacimiento:</h3> <p>Sagamihara, Japan</p>
+        </div>
+    </div>
+    <div class="estadistica" id="estadistica17" style="display: none;">
+        <div class="stadistics alonso">
+            <img src="../media/alonso.png" alt="">       
+            <h2>Fernando Alonso</h2>
+            <h3>Equipo:</h3> <p>Aston Martin</p>
+            <h3>Podios:</h3> <p>106</p>
+            <h3>Agujas:</h3> <p>2337</p>
+            <h3>Grandes Premios en los que participo:</h3> <p>408</p>
+            <h3>Campeonato Mundial:</h3> <p>2</p>
+            <h3>Mejor resultado en carrera:</h3> <p>1 (x32)</p>
+            <h3>Posicion mas alta en la parrilla:</h3> <p>1</p>
+            <h3>Fecha de nacimiento:</h3> <p>29/07/1981</p>
+            <h3>Lugar de nacimiento:</h3> <p>Oviedo, Spain</p>
+            </div>
+    </div>
+    <div class="estadistica" id="estadistica18" style="display: none;">
+        <div class="stadistics lawson">
+            <img src="../media/lialaw01.avif" alt="">       
+            <h2>Liam Lawson</h2>
+            <h3>Equipo:</h3> <p>Racing Bulls</p>
+            <h3>Podios:</h3> <p>0</p>
+            <h3>Agujas:</h3> <p>6</p>
+            <h3>Grandes Premios en los que participo:</h3> <p>16</p>
+            <h3>Campeonato Mundial:</h3> <p>0</p>
+            <h3>Mejor resultado en carrera:</h3> <p>9 (x3)</p>
+            <h3>Posicion mas alta en la parrilla:</h3> <p>5</p>
+            <h3>Fecha de nacimiento:</h3> <p>11/02/2002</p>
+            <h3>Lugar de nacimiento:</h3> <p>Hastings, New Zealand</p>
+            </div>
+    </div>
+    <div class="estadistica" id="estadistica19" style="display: none;">
+        <div class="stadistics doohan">
+            <img src="../media/jacdoo01.avif" alt="">       
+            <h2>Jack Doohan</h2>
+            <h3>Equipo:</h3> <p>Alpine</p>
+            <h3>Podios:</h3> <p>0</p>
+            <h3>Agujas:</h3> <p>0</p>
+            <h3>Grandes Premios en los que participo:</h3> <p>6</p>
+            <h3>Campeonato Mundial:</h3> <p>0</p>
+            <h3>Mejor resultado en carrera:</h3> <p>13 (x1)</p>
+            <h3>Posicion mas alta en la parrilla:</h3> <p>11</p>
+            <h3>Fecha de nacimiento:</h3> <p>20/01/2003</p>
+            <h3>Lugar de nacimiento:</h3> <p>Gold Coast, Australia</p>
+            </div>
+    </div>
+    <div class="estadistica" id="estadistica20" style="display: none;">
+        <div class="stadistics bortoleto">
+            <img src="../media/gabbor01.avif" alt="">       
+            <h2>Gabriel Bortoleto</h2>
+            <h3>Equipo:</h3> <p>Kick Sauber</p>
+            <h3>Podios:</h3> <p>0</p>
+            <h3>Agujas:</h3> <p>0</p>
+            <h3>Grandes Premios en los que participo:</h3> <p>5</p>
+            <h3>Campeonato Mundial:</h3> <p>0</p>
+            <h3>Mejor resultado en carrera:</h3> <p>14 (x1)</p>
+            <h3>Posicion mas alta en la parrilla:</h3> <p>15</p>
+            <h3>Fecha de nacimiento:</h3> <p>14/10/2004</p>
+            <h3>Lugar de nacimiento:</h3> <p>São Paulo, Brazil</p>
+            </div>
+    </div>
+</body>
+</html>
