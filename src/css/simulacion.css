@@ -1,0 +1,240 @@
+@import url(variable.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Formula1-bold";
+    background-image: url('../media/a-red-and-black-background-with-strip-lines-texture-vector\ \(1\).jpg');
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed;
+    color: #f1f1f1;
+    padding: 20px;
+  }
+/* ********************* header ***************************************/
+li a:hover {
+    color: black;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+ol, ul{
+    list-style: none;
+}
+.header {
+    height: var(--altura-header);
+    background-color: red;
+}
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0 var(--padding-left-right);
+}
+.menu-f1 {
+    display: none;
+}
+.menu-f1:checked + .ul-links{
+    height: calc(100vh - var(--altura-header));
+}
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.list-icon {
+    color: white;
+    cursor: pointer;
+}
+.ul-links {
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.534);
+    position: absolute;
+    top: var(--altura-header);
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    transition: all .3s;
+
+}
+.li-links {
+    font-size: large;
+    font-family: "Formula1-bold";
+}
+.link {
+    font-size: 3.5em;
+    color: white;
+}
+
+@media (min-width:768px) {
+    .label-f1 {
+        display: none;
+    }
+    .ul-links{
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .link{
+        font-size: 1.2rem;
+        transition: all .3s;
+        padding: .2rem .7rem;
+    }
+    .link:hover{
+        color: #11100F;
+    }
+}
+
+/* *****************************************************************************/
+  h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+ 
+  #circuitSelector {
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #444;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin-inline: auto;
+  }
+  
+  button {
+    background-color: #e10600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin-top: 20px;      
+    gap: 10px;             
+    flex-wrap: wrap;   
+  }
+  
+  button:disabled {
+    background-color: #444;
+    cursor: not-allowed;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #ff2a2a;
+  }
+  
+ 
+  #preview {
+    text-align: center;
+    margin-bottom: 5%;
+    
+  }
+  
+  #preview img {
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    background-color: #444;
+  }
+  
+  #simulation {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 20px auto;
+    background-image: url('ruta/a/tu/circuito.png'); 
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 56.25%; 
+    border: 3px solid #e10600;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #444;
+  }
+  
+  #car {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    border-radius: 50%;
+    transition: left 0.2s linear, top 0.2s linear;
+  }
+  
+
+  #weatherStatus {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 15px;
+    color: #ccc;
+  }
+  
+
+  #clasificacion {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    border-collapse: collapse;
+  }
+  
+  #clasificacion th,
+  #clasificacion td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #clasificacion th {
+    background-color: #222;
+    color: #e10600;
+  }
+  
+  #clasificacion tr:nth-child(even) {
+    background-color: #1a1a1a;
+  }
+  
+  #clasificacion tr:nth-child(odd) {
+    background-color: #2a2a2a;
+  }
+  @media (max-width: 768px) {
+    #simulation {
+      padding-top: 75%;
+    }
+  }
+  .car {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    transition: left 0.2s linear, top 0.2s linear;
+    z-index: 10;
+  }
+  

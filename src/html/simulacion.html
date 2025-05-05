@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Selección de Circuito</title>
+  <link rel="stylesheet" href="../css/simulacion.css" />
+  <script src="../js/simulacion.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+        <img src="../media/logof1-blanco.png" alt="" class="logo">
+
+        <label for="menu-f1" class="label-f1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="list-icon" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+        </label>
+        <input class="menu-f1" type="checkbox" name="" id="menu-f1">
+
+        <ul class="ul-links">
+            <li class="li-links">
+                <a href="../html/index.html">Pagina Principal</a>
+            </li>
+            <li class="li-links">
+                <a href="../html/simulacion.html">Circuitos</a>
+            </li>
+            <li class="li-links">
+                <a href="../html/pilotos.html">Pilotos</a>
+            </li>
+            <li class="li-links">
+                <a href="../html/vehiculos.html">Vehiculos</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+  <div class="container">
+    <h1>Selecciona un Circuito</h1>
+
+    <div class="circuit-list">
+      <select id="circuitSelector">
+        <option value="">-- Elige un circuito --</option>
+        <option value="circuito1">Australia carbon</option>
+        <option value="circuito2">Bahrain carbon</option>
+        <option value="circuito3">China carbon</option>
+        <option value="circuito4">Japan carbon</option>
+        <option value="circuito5">Saudi Arabia carbon</option>
+      </select>
+    </div>
+
+    <div id="weather">
+      <p id="weatherStatus">Clima: -</p>
+    </div>
+
+    <div id="preview">
+      <p>Vista previa del circuito aparecerá aquí</p>
+    </div>
+
+    <div class="controls">
+      <button id="startBtn" disabled>Iniciar Simulación</button>
+      <button id="stopBtn" disabled>Detener Simulación</button>
+      <button id="resetBtn" disabled>Reiniciar Simulación</button>
+    </div>
+
+    <div id="simulation" class="simulation-area">
+      <img id="car" src="https://i.imgur.com/O7cZz2G.png" alt="Auto" />
+    </div>
+
+    <div id="simulationResults">
+      <h2>Clasificación</h2>
+      <table id="clasificacion">
+        <tr>
+          <th>Posición</th>
+          <th>Piloto</th>
+          <th>Tiempo</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
