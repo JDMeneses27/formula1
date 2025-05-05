@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
   }
-  
+
   body {
     font-family: "Formula1-bold";
     background-image: url('../media/a-red-and-black-background-with-strip-lines-texture-vector\ \(1\).jpg');
@@ -15,7 +15,93 @@
     color: #f1f1f1;
     padding: 20px;
   }
+/* ********************* header ***************************************/
+li a:hover {
+    color: black;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+ol, ul{
+    list-style: none;
+}
+.header {
+    height: var(--altura-header);
+    background-color: red;
+}
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0 var(--padding-left-right);
+}
+.menu-f1 {
+    display: none;
+}
+.menu-f1:checked + .ul-links{
+    height: calc(100vh - var(--altura-header));
+}
+.logo {
+    width: 200px;
+    height: auto;
+}
 
+.list-icon {
+    color: white;
+    cursor: pointer;
+}
+.ul-links {
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.534);
+    position: absolute;
+    top: var(--altura-header);
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    transition: all .3s;
+
+}
+.li-links {
+    font-size: large;
+    font-family: "Formula1-bold";
+}
+.link {
+    font-size: 3.5em;
+    color: white;
+}
+
+@media (min-width:768px) {
+    .label-f1 {
+        display: none;
+    }
+    .ul-links{
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .link{
+        font-size: 1.2rem;
+        transition: all .3s;
+        padding: .2rem .7rem;
+    }
+    .link:hover{
+        color: #11100F;
+    }
+}
+
+/* *****************************************************************************/
   h1 {
     text-align: center;
     color: #ffffff;
