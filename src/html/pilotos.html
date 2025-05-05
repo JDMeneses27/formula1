@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="../js/drivers.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drivers</title>
@@ -13,6 +12,9 @@
     <div class="subtitle"><p>Consulta la alineación oficial de F1 de esta temporada. Desglose completo de pilotos, puntos y posiciones actuales. Sigue a tus pilotos favoritos de F1 dentro y fuera de la pista.
     </p></div>
 </header>
+<div class="seleccion">
+    ¡Selecciona el piloto!
+</div>
     <div class="container">
         <div class="drivers mclaren">
             <p class="puestos">1</p>
@@ -417,5 +419,21 @@
             <h3>Lugar de nacimiento:</h3> <p>São Paulo, Brazil</p>
             </div>
     </div>
+    <script>
+        function selectDriver(button, id) {
+            // Oculta todos los divs de estadísticas
+            const estadisticas = document.querySelectorAll('.estadistica');
+            estadisticas.forEach(est => est.style.display = 'none');
+    
+            // Muestra el div correspondiente
+            const selected = document.getElementById(id);
+            if (selected) {
+                selected.style.display = 'block';
+                selected.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    </script>
+
+
 </body>
 </html>

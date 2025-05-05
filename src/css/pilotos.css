@@ -20,13 +20,13 @@ header {
     font-family: "F1";
     color: white;
     font-size: 60px;
-    margin-left: 50px;
+    margin-left: 70px;
     text-align: left;
 }
 
 .subtitle{
     color: white;
-    margin-left: 50px;
+    margin-left: 70px;
     background-color: rgba(202, 201, 201, 0.849);
     margin-top: 20px;
     width: 90%;
@@ -45,11 +45,11 @@ header {
     /* background-color: brown; */
     width: 100%;
     height: 650px;
-    margin-top: 600px;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr); 
-    grid-template-rows: repeat(6, 1fr); 
-    gap: 10px;
+    margin-top: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
 .drivers {
     /* background-color: blueviolet; */
@@ -62,6 +62,16 @@ header {
     font-weight: bold;
     border-radius: 8px;
     color: white;
+}
+
+.seleccion {
+  position: absolute;
+  /* background-color: #005ba9; */
+  font-family: "Formula1-bold";
+  color: white;
+  font-size: 100px;
+  margin-left: 70px;
+  margin-top: 20%;
 }
 
 .mclaren {
@@ -197,14 +207,14 @@ header {
 
 .estadistica {
   display: none; /* Al principio todas las estadísticas están ocultas */
-  /* background-color: #fff; */
+  background-color: black;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
   height: 600px;
   position: absolute;
-  margin-top: -1250px;
+  margin-top: -1280px;
   text-align: center;
   transition: opacity 0.3s ease;
 }
@@ -235,7 +245,13 @@ header {
   /* background-color: #006F62; */
   font-size: 50px;
 }
-
+.stadistics img {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  /* background-color: #005ba9; */
+}
 .stadistics h3 {
   position: relative;
   font-family: "F1";
@@ -255,6 +271,9 @@ header {
 .stadistics p {
   font-family: "impact";
   color: #575757;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   margin-left: 80px;
   /* background-color: #00D2BE; */
@@ -357,7 +376,7 @@ header {
 }
 
 .albon img {
-  width: 550px;
+  width: 550px; 
   right: 700px;
   top: 40px;
   filter: drop-shadow(5px 5px 10px  #005AFF);  object-fit: cover; /* recorta y centra la imagen */
@@ -371,13 +390,12 @@ header {
 
 .ocon img {
   width: 550px;
-  right: 700px;
+  right: 700px; 
   top: 40px;
   filter: drop-shadow(5px 5px 10px  #B6BABD);  object-fit: cover; /* recorta y centra la imagen */
   border-radius: 10px; /* opcional: bordes redondeados */
   position: absolute;
 }
-
 .stroll {
   box-shadow: 0 0 10px #006F62, 0 0 20px #006F62, 0 0 30px #006F62, 0 0 40px #006F62;
 }
@@ -520,4 +538,501 @@ header {
   filter: drop-shadow(5px 5px 10px  #00e701);  object-fit: cover; /* recorta y centra la imagen */
   border-radius: 10px; /* opcional: bordes redondeados */
   position: absolute;
+}
+
+
+
+@media screen and (max-width: 360px) {
+.drivers {
+  width: 45%;
+}
+
+.piastri img,
+.norris img,
+.max img,
+.leclerc img,
+.stroll img,
+.gasly img,
+.hadjar img,
+.doohan img{  
+  top: -5px;
+  left: 50px;
+  width: 300px;
+}
+  
+.hamilton img,
+.ocon img,
+.hulkenberg img,
+.bearman img,
+.lawson img,
+.bortoleto img {
+  top: -5px;
+  right: 20px;
+  width: 300px;
+}
+.russell img,
+.albon img,
+.sainz img{
+  top: -5px;
+  right: 10px;
+  width: 300px;
+}
+
+.yuki img,
+.alonso img{
+  top: 30px;
+  right: -45px;
+  width: 400px;
+}
+
+.antonelli img{
+  top: -30px;
+  right: -40px;
+  width: 400px;
+}
+
+.stadistics {
+  margin-left: 2px;
+  margin-top: 300px;
+  height: 280px;
+  width: 280px;
+}
+.stadistics h2 {
+  top: 45px;
+  font-size: 25px;
+}
+.stadistics h3 {
+  /* background-color: #006F62; */
+  left: -30px;
+  margin-top: -37px;
+  margin-right: 10px;
+  font-size: 9px;
+}
+.stadistics p {
+  /* background-color: #005ba9; */
+  top: 60px;
+  margin-left: -10px;
+  font-size: 10px;
+}
+}
+@media screen and (max-width: 375px) {
+  .drivers {
+    width: 45%;
+}
+  .drivers img {
+    margin-left: 25px;
+    width: 150px  
+  }
+.piastri img,
+.norris img,
+.max img,
+.leclerc img,
+.stroll img,
+.gasly img,
+.hadjar img,
+.doohan img{  
+top: -5px;
+left: 15%;
+width: 300px;
+}
+
+.hamilton img,
+.ocon img,
+.hulkenberg img,
+.bearman img,
+.lawson img,
+.bortoleto img {
+top: -5px;
+right: 12%;
+width: 300px;
+}
+.russell img,
+.albon img,
+.sainz img{
+top: -5px;
+left:12%;
+width: 300px;
+}
+
+.yuki img,
+.alonso img{
+top: 30px;
+left: 0%;
+width: 400px;
+}
+
+.antonelli img{
+top: -30px;
+right: 0%;
+width: 400px;
+}
+
+.stadistics {
+margin-left: 0%;
+margin-top: 300px;
+height: 280px;
+width: 100%;
+}
+.stadistics h2 {
+top: 45px;
+font-size: 30px;
+}
+.stadistics h3 {
+margin-left: -10%;
+margin-top: -37px;
+font-size: 10px;
+}
+.stadistics p {
+top: 60px;
+left: 45%;
+font-size: 11px;
+} 
+}
+@media screen and (max-width: 390px) {
+.drivers {
+    width: 45%;
+}
+.drivers img {
+    margin-left: 25px;
+    width: 150px  
+}
+.piastri img,
+.norris img,
+.max img,
+.leclerc img,
+.stroll img,
+.gasly img,
+.hadjar img,
+.doohan img{  
+top: -5px;
+margin-left: -2%;
+width: 300px;
+}
+
+.hamilton img,
+.ocon img,
+.hulkenberg img,
+.bearman img,
+.lawson img,
+.bortoleto img {
+top: -5px;
+margin-right: -2%;
+width: 300px;
+}
+.russell img,
+.albon img,
+.sainz img{
+top: -5px;
+margin-left: -2%;
+width: 300px;
+}
+
+.yuki img,
+.alonso img{
+top: 30px;
+margin-left: -2%;
+width: 400px;
+}
+
+.antonelli img{
+top: -30px;
+margin-right: -3%;
+width: 400px;
+}
+
+.stadistics {
+margin-left: 0%;
+margin-top: 300px;
+height: 280px;
+width: 100%;
+}
+.stadistics h2 {
+top: 45px;
+font-size: 30px;
+}
+.stadistics h3 {
+margin-left: -10%;
+margin-top: -37px;
+font-size: 10px;
+}
+.stadistics p {
+top: 60px;
+left: 75%;
+font-size: 11px;
+} 
+}
+@media screen and (max-width: 415px) {
+  .drivers {
+    width: 45%;
+}
+  .drivers img {
+    margin-left: 25px;
+    width: 150px  
+  }
+.piastri img,
+.norris img,
+.max img,
+.leclerc img,
+.stroll img,
+.gasly img,
+.hadjar img,
+.doohan img{  
+top: -5px;
+left: 23%;
+width: 300px;
+}
+
+.hamilton img,
+.ocon img,
+.hulkenberg img,
+.bearman img,
+.lawson img,
+.bortoleto img {
+top: -5px;
+right: 23%;
+width: 300px;
+}
+.russell img,
+.albon img,
+.sainz img{
+top: -5px;
+left: 23%;
+width: 300px;
+}
+
+.yuki img,
+.alonso img{
+top: 30px;
+left: 1%;
+width: 400px;
+}
+
+.antonelli img{
+top: -30px;
+right: 10%;
+width: 400px;
+}
+
+.stadistics {
+margin-left: 0%;
+margin-top: 300px;
+height: 280px;
+width: 100%;
+}
+.stadistics h2 {
+top: 45px;
+font-size: 30px;
+}
+.stadistics h3 {
+margin-left: 2%;
+margin-top: -37px;
+font-size: 10px;
+}
+.stadistics p {
+top: 60px;
+left: 62%;
+font-size: 11px;
+} 
+} 
+@media screen and (max-width: 428px) {
+  .title {
+    margin: 200px 0px -60px 0px;
+    font-size: 42px;
+    margin-left: 20px;
+    text-align: left;
+  }
+  .subtitle {
+    margin-left: 15px;
+    width: 90%;
+    height: auto;
+    margin-top: 80px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+  }
+
+  .subtitle p {
+    margin: 5px 15px;
+  }
+  .seleccion {
+    font-size: 50px;
+    margin-left: 20px;
+    margin-top: 60%;
+  }
+
+  .drivers {
+    width: 45%;
+}
+  .drivers img {
+    margin-left: 25px;
+    width: 150px  
+  }
+.piastri img,
+.norris img,
+.max img,
+.leclerc img,
+.stroll img,
+.gasly img,
+.hadjar img,
+.doohan img{  
+top: -5px;
+left: 15%;
+width: 300px;
+}
+
+.hamilton img,
+.ocon img,
+.hulkenberg img,
+.bearman img,
+.lawson img,
+.bortoleto img {
+top: -5px;
+right: 15%;
+width: 300px;
+}
+.russell img,
+.albon img,
+.sainz img{
+top: -5px;
+left: 15%;
+width: 300px;
+}
+
+.yuki img,
+.alonso img{
+top: 30px;
+left: 5%;
+width: 400px;
+}
+
+.antonelli img{
+top: -30px;
+right: 2%;
+width: 400px;
+}
+
+.stadistics {
+margin-left: 0%;
+margin-top: 300px;
+height: 280px;
+width: 100%;
+}
+.stadistics h2 {
+top: 45px;
+font-size: 30px;
+}
+.stadistics h3 {
+margin-left: 2%;
+margin-top: -37px;
+font-size: 10px;
+}
+.stadistics p {
+top: 60px;
+margin-left: -12%;
+font-size: 11px;
+} 
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .title {
+    font-size: 48px;
+    margin-left: 40px;
+    text-align: left;
+  }
+  
+  .subtitle {
+    margin-left: 40px;
+    width: 90%;
+    height: auto;
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .subtitle p {
+    margin: 5px 30px;
+  }
+  .seleccion {
+    font-size: 70px;
+    margin-left: 150px;
+    margin-top: 25%;
+    width: 800px;
+  }
+  .drivers {
+    width: 30%;
+  }
+
+  .drivers img {
+    margin-left: 15px;
+    width: 200px;
+  }
+
+  .piastri img,
+  .norris img,
+  .max img,
+  .leclerc img,
+  .stroll img,
+  .gasly img,
+  .hadjar img,
+  .doohan img {  
+    top: -15px;
+    left: 32%;
+    width: 300px;
+  }
+
+  .hamilton img,
+  .ocon img,
+  .hulkenberg img,
+  .bearman img,
+  .lawson img,
+  .bortoleto img {
+    top: -15px;
+    right: 32%;
+    width: 300px;
+  }
+
+  .russell img,
+  .albon img,
+  .sainz img {
+    top: -15px;
+    left: 32%;
+    width: 300px;
+  }
+
+  .yuki img,
+  .alonso img {
+    top: 20px;
+    left: 25%;
+    width: 400px;
+  }
+
+  .antonelli img {
+    top: -20px;
+    right: 27%;
+    width: 370px;
+  }
+
+  .stadistics {
+    margin-left: 0%;
+    margin-top: 290px;
+    height: 300px;
+    width: 100%;
+  }
+
+  .stadistics h2 {
+    top: 30px;
+    font-size: 35px;
+  }
+
+  .stadistics h3 {
+    top: 50px;
+    margin-left: 10%;
+    margin-top: -35px;
+    font-size: 14px;
+  }
+
+  .stadistics p {
+    top: 20px;
+    margin-left: 33%;
+    font-size: 14px;
+  }
 }
