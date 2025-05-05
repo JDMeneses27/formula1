@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Selección de Circuito</title>
+  <link rel="stylesheet" href="../css/simulacion.css" />
+  <script src="../js/simulacion.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Selecciona un Circuito</h1>
+
+    <div class="circuit-list">
+      <select id="circuitSelector">
+        <option value="">-- Elige un circuito --</option>
+        <option value="circuito1">Australia carbon</option>
+        <option value="circuito2">Bahrain carbon</option>
+        <option value="circuito3">China carbon</option>
+        <option value="circuito4">Japan carbon</option>
+        <option value="circuito5">Saudi Arabia carbon</option>
+      </select>
+    </div>
+
+    <div id="weather">
+      <p id="weatherStatus">Clima: -</p>
+    </div>
+
+    <div id="preview">
+      <p>Vista previa del circuito aparecerá aquí</p>
+    </div>
+
+    <div class="controls">
+      <button id="startBtn" disabled>Iniciar Simulación</button>
+      <button id="stopBtn" disabled>Detener Simulación</button>
+      <button id="resetBtn" disabled>Reiniciar Simulación</button>
+    </div>
+
+    <div id="simulation" class="simulation-area">
+      <img id="car" src="https://i.imgur.com/O7cZz2G.png" alt="Auto" />
+    </div>
+
+    <div id="simulationResults">
+      <h2>Clasificación</h2>
+      <table id="clasificacion">
+        <tr>
+          <th>Posición</th>
+          <th>Piloto</th>
+          <th>Tiempo</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
